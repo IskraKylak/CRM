@@ -2,17 +2,6 @@ import { createStore } from 'vuex'
 import auth from './auth'
 
 export default createStore({
-<<<<<<< HEAD
-   state: {
-   },
-   mutations: {
-   },
-   actions: {
-   },
-   modules: {
-      auth
-   }
-=======
   state: {
     error: null
   },
@@ -31,5 +20,4 @@ export default createStore({
   modules: {
     auth
   }
->>>>>>> aeb516a (login register v2)
 })

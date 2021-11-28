@@ -1,10 +1,5 @@
 <template>
   <div class="grey darken-1 empty-layout">
-<<<<<<< HEAD
-    <router-view />
-  </div>
-</template>
-=======
     <router-view/>
   </div>
 </template>
@@ -24,4 +19,3 @@ export default {
   }
 }
 </script>
->>>>>>> aeb516a (login register v2)
