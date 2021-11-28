@@ -113,6 +113,7 @@ export default {
     async submitHundler() {
       this.v$.$touch();
       if (!this.v$.$invalid) {
+<<<<<<< HEAD
         const register = {
           name: this.name,
           email: this.email,
@@ -127,6 +128,19 @@ export default {
         this.email = "";
         this.v$.$reset();
         this.$emit("close");
+=======
+        const register1 = {
+          name: this.name,
+          email: this.email,
+          password: this.password,
+        }
+        try {
+          await this.$store.dispatch("register", register1);
+          this.$router.push("/");
+        } catch (e) {
+          throw e
+        }
+>>>>>>> aeb516a (login register v2)
       }
     },
   },
@@ -143,4 +157,8 @@ export default {
 .form-item.errorInput .errorText {
   display: block;
 }
+<<<<<<< HEAD
 </style>
+=======
+</style>
+>>>>>>> aeb516a (login register v2)
